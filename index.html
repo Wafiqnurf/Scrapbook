@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Digital Scrapbook</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loading-heart"></div>
+    </div>
+
+    <div class="hearts"></div>
+
+    <div class="container">
+      <div class="header">
+        <h1>Our Love Story</h1>
+        <p>Every moment with you is worth remembering ❤️</p>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-btn active" data-section="memories">Memories</button>
+        <button class="nav-btn" data-section="gallery">Gallery</button>
+        <button class="nav-btn" data-section="timeline">Timeline</button>
+      </nav>
+
+      <div id="memories" class="section active">
+        <div class="scrapbook">
+          <div class="memory-card">
+            <img
+              src="image/gallery/Difference Between Casual and Casual Elegant Dress Code.jpg"
+              alt="First Date"
+            />
+            <h3>Our First Date</h3>
+            <p>
+              Remember when we first met at that cute little café? Your smile
+              lit up the whole room.
+            </p>
+            <div class="date">January 15, 2024</div>
+          </div>
+
+          <div class="memory-card">
+            <img src="image/gallery/beach.jpg" alt="Beach Day" />
+            <h3>Beach Sunset</h3>
+            <p>
+              Walking along the shore, watching the sunset together. Perfect
+              moment.
+            </p>
+            <div class="date">February 14, 2024</div>
+          </div>
+
+          <div class="memory-card">
+            <img src="image/gallery/Date night.jpg" alt="Movie Night" />
+            <h3>Movie Night</h3>
+            <p>
+              Cozy evening watching our favorite movies and sharing popcorn.
+            </p>
+            <div class="date">March 1, 2024</div>
+          </div>
+
+          <div class="memory-card">
+            <img src="image/gallery/Love♡.jpg" alt="Picnic" />
+            <h3>Park Picnic</h3>
+            <p>
+              A beautiful spring day spent enjoying good food and better
+              company.
+            </p>
+            <div class="date">March 20, 2024</div>
+          </div>
+
+          <div class="memory-card">
+            <img src="image/gallery/Concert Date.jpg" alt="Concert" />
+            <h3>First Concert Together</h3>
+            <p>
+              Dancing and singing to our favorite songs. Such an amazing night!
+            </p>
+            <div class="date">April 5, 2024</div>
+          </div>
+
+          <div class="memory-card">
+            <img src="image/gallery/perfect date.jpg" alt="Cooking" />
+            <h3>Cooking Adventure</h3>
+            <p>
+              Attempting to make pasta from scratch. More flour ended up on us
+              than in the food!
+            </p>
+            <div class="date">April 15, 2024</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Section with Filters -->
+      <div id="gallery" class="section">
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="dates">Dates</button>
+          <button class="filter-btn" data-filter="events">Events</button>
+          <button class="filter-btn" data-filter="travel">Travel</button>
+        </div>
+        <div class="gallery">
+          <!-- Existing gallery items with added data-category -->
+          <div class="gallery-item" data-category="dates">
+            <img src="image/1.jpeg" alt="Gallery 1" />
+            <div class="overlay">First Ur Photo</div>
+          </div>
+          <div class="gallery-item" data-category="dates">
+            <img src="image/2.jpeg" alt="Gallery 2" />
+            <div class="overlay">First Photo Studio</div>
+          </div>
+          <div class="gallery-item" data-category="dates">
+            <img src="image/3.jpeg" alt="Gallery 3" />
+            <div class="overlay">First Selfie Together</div>
+          </div>
+          <!-- Add data-category events -->
+          <div class="gallery-item" data-category="events">
+            <img src="image/4.jpeg" alt="Gallery 3" />
+            <div class="overlay">Cafe Date</div>
+          </div>
+          <div class="gallery-item" data-category="events">
+            <img src="image/5.jpeg" alt="Gallery 3" />
+            <div class="overlay">Event School</div>
+          </div>
+          <div class="gallery-item" data-category="events">
+            <img src="image/6.jpeg" alt="Gallery 3" />
+            <div class="overlay">Library Date</div>
+          </div>
+          <!-- Add data-category travel -->
+          <div class="gallery-item" data-category="travel">
+            <img src="image/7.jpeg" alt="Gallery 3" />
+            <div class="overlay">Travelling</div>
+          </div>
+          <div class="gallery-item" data-category="travel">
+            <img src="image/8.jpeg" alt="Gallery 3" />
+            <div class="overlay">Picnic</div>
+          </div>
+          <div class="gallery-item" data-category="travel">
+            <img src="image/9.jpeg" alt="Gallery 3" />
+            <div class="overlay">Beach Date</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox">
+        <div class="lightbox-content">
+          <img src="" alt="Lightbox Image" />
+          <span class="lightbox-close">&times;</span>
+          <div class="lightbox-nav lightbox-prev">&lt;</div>
+          <div class="lightbox-nav lightbox-next">&gt;</div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div id="timeline" class="section">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>First Meeting</h3>
+              <p>The day our eyes met for the first time.</p>
+              <div class="date">January 1, 2024</div>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>First Date</h3>
+              <p>Coffee and conversations that lasted for hours.</p>
+              <div class="date">January 15, 2024</div>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>First Kiss</h3>
+              <p>Under the starlit sky, a moment of pure magic.</p>
+              <div class="date">February 1, 2024</div>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Valentine's Day</h3>
+              <p>Our first celebration of love together.</p>
+              <div class="date">February 14, 2024</div>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="music-player">
+      <button class="music-btn" id="playMusic">♪</button>
+      <span>Play Song</span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
